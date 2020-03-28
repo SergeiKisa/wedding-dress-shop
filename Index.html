@@ -8,7 +8,21 @@
 </head>
 
 <style>
-
+    .grayImg {
+        -webkit-filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayImg grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+    }
+    
+    .button {
+        background: rgba(196, 196, 196, 0.25);
+        border: 1px solid #000000;
+        box-sizing: border-box;
+    }
 </style>
 
 <body>
@@ -20,8 +34,8 @@
                 <img src="wedding/logo.png " style=" height:85px;" alt="txt">
             </div>
             <div class="search_block">
-                <input type="text" name="" id="" placeholder="Поиск...">
-                <div>избранное</div>
+                <input type="text" name="" id="" placeholder="Поиск..." style="outline: none;">
+                <div style="user-select: none;">избранное</div>
             </div>
         </div>
 
@@ -32,7 +46,7 @@
             </div>
             <div class="inscription_and_block">
                 <h1>ГОТОВЬСЯ К <br>ВАЖНОМУ ДНЮ <br>С НАМИ!</h1>
-                <button><p>Прейти в каталог</p></button>
+                <button class="button"><p>Перейти в каталог</p></button>
             </div>
             <div class="navigation_buttons">
                 <div style="margin-bottom: 20px">каталог</div>
@@ -44,7 +58,7 @@
                 </div>
             </div>
         </div>
-
+        <!--  ------------------------------------------------------------  -->
         <div class="introduction">
             <div>
                 <div>
@@ -56,25 +70,23 @@
                 </div>
                 <hr style="width: 70%; margin: 50px auto ">
 
-                <div>
-                    <fieldset class="offering">
-                        <legend>Мы предлагаем Вам:</legend>
-                        <div>
-                            <div>продажу свадебных, вечерних, будуарных и детких платьев</div>
-                            <div>бесплатную глажку паром платьев</div>
-                            <div>упаковку и хранение свадебных платьев до дня торжества</div>
-                            <div>продажу аксессуаров и обуви</div>
-                        </div>
-                    </fieldset>
-                </div>
-            </div>
-            <div>
-                <div style="width: 400px; ">
-                    <div style="position:absolute; ">
-                        <div class="bigBlockBackground" style="height: 500px; width: 400px; position: relative; top: -40px; right: -40px; "></div>
+                <fieldset class="offering">
+                    <legend style="display: flex; justify-content: space-between;  margin-left:-15px; ">
+                        <div style="margin-left: 30px; margin-right: 70px;">Мы предлагаем Вам:</div>
+                    </legend>
+                    <div>
+                        <div>продажу свадебных, вечерних, будуарных и детких платьев</div>
+                        <div>бесплатную<br> глажку паром платьев</div>
+                        <div>упаковку и хранение свадебных<br>платьев до дня торжества</div>
+                        <div>продажу аксессуаров и обуви</div>
                     </div>
-                    <img src="wedding/jonathan_1.jpg " alt=" " style="width:100%; ">
+                </fieldset>
+            </div>
+            <div style=" width: 400px; ">
+                <div style="position:absolute; ">
+                    <div class="bigBlockBackground " style="height: 525px; width: 400px; position: relative; top: 50px; right: 50px; "></div>
                 </div>
+                <img src="wedding/jonathan_1.jpg " alt=" " class="grayImg " style="width:100%; ">
             </div>
         </div>
 
@@ -82,16 +94,16 @@
 
         <div class="slider_catalog ">
             <button>&#8592;</button>
-            <div style="margin-bottom: 60px; padding-left: 30px;  ">
-                <img src="new/1m.png " alt=" ">
+            <div style="margin-bottom: 60px; padding-left: 30px; ">
+                <img src="new/1m.png " class="grayImg ">
                 <div> Cost </div>
             </div>
             <div style="margin-top: 60px; ">
-                <img src="new/2m.png" alt=" ">
+                <img src="new/2m.png " class="grayImg ">
                 <div> Cost </div>
             </div>
             <div style="margin-bottom: 60px; padding-right: 30px; ">
-                <img src="new/3m.png " alt=" ">
+                <img src="new/3m.png " class="grayImg ">
                 <div> Cost </div>
             </div>
             <button>&#8594;</button>
@@ -105,6 +117,8 @@
             <button class="fitting_record_button ">записаться на примерку</button>
         </div>
     </main>
+    <!--  ------------------------------------------------------------  -->
+
     <footer>
         <div class="footer_info_bar ">
             <div class="footer_info_bar_Logo ">
